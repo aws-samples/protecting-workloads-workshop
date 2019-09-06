@@ -8,7 +8,7 @@ Now that you have remediated the environment, you will again use Amazon Inspecto
 
 2.  Locate the template that you created during the Assess Phase and confirm the run has completed.
 
-3.  If needed, click **Assessmnet runs** and periodically refresh the screen.  Wait until the status for the run changes to *Analysis complete*.  The run will take approximately 15 minutes to complete.
+3.  If needed, click **Assessment runs** and periodically refresh the screen.  Wait until the status for the run changes to *Analysis complete*.  The run will take approximately 15 minutes to complete.
 
 4.  Compare the number of findings between the two runs.   In most cases, there will be fewer findings in the newer run since patches have been applied.   The change in the number findings may vary based on the age of the AMI used to launch the instances.
 
@@ -69,7 +69,7 @@ Here are some sample of metrics that you can use. Starting from top left side, i
 
 1.  Amazon Inspector offers a variety of rules packages that can be included in assessments.  The applicable rules packages may vary by operating system.   The Common Vulnerabilities and Exposures assessment is based on the CVE project that is hosted at [cve.mitrei.org](https://cve.mitre.org).  Open a new tab in your browser to [cve.mitre.orf](https://cve.mitre.org).  Click on **Search CVE List**.  Enter **CVE-2018-20169** into the search field and click **Submit**.  This shows you how to research known vulnerabilities.
 
-2.  The Security Best Practices rule package examines some common configuration settings for some of the most commobn Amazon Linux settings. You can read more about this rule package [here](https://docs.aws.amazon.com/inspector/latest/userguide/inspector_security-best-practices.html).
+2.  The Security Best Practices rule package examines some common configuration settings for some of the most common Amazon Linux settings. You can read more about this rule package [here](https://docs.aws.amazon.com/inspector/latest/userguide/inspector_security-best-practices.html).
 
 ---
 

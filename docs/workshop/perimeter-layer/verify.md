@@ -17,7 +17,7 @@ Confirm that all of the tests in the script pass. If requests (other than canary
 
 ![Final Scan Terminal](./images/final-scan-term.svg)
 
-If the the auomated scanner is being used for your event (AWS sponsored), you should also see green for your unique Id <a href="http://waflabdash.awssecworkshops.com/" target="_blank">on the WAF scanning results dashboard</a>.
+If the the automated scanner is being used for your event (AWS sponsored), you should also see green for your unique Id <a href="http://waflabdash.awssecworkshops.com/" target="_blank">on the WAF scanning results dashboard</a>.
 
 ![WAF Lab Centralized Dashboard](./images/waflabdash-post.png)
 
@@ -28,7 +28,7 @@ https://aws.amazon.com/blogs/aws/cloudwatch-dashboards-create-use-customized-met
 
 Here are some sample of metrics that you can use. Starting from top left side, in clockwise order, we have:
 
-![CloudWatch WAF Dasboard](./images/waf-cw-dash.png)
+![CloudWatch WAF Dashboard](./images/waf-cw-dash.png)
 
 - **Allowed vs Blocked Requests**: if you receive a surge in allowed access (2 times normal peak access) or blocked access (any period that identifies more than 1,000 blocked requests), you can configure CloudWatch to send an alert. The idea here is to track known DDoS (when blocked requests increase) or new version of attack (when the requests are allowed to access the system);
 
@@ -46,4 +46,4 @@ Here are some sample of metrics that you can use. Starting from top left side, i
 ---
 
 This concludes the Perimeter Round.
-You can now procede to the [Host Layer round](/workshop/host-layer/) or if you are finished, [the Cleanup](cleanup.md)
+You can now proceed to the [Host Layer round](/workshop/host-layer/) or if you are finished, [the Cleanup](cleanup.md)

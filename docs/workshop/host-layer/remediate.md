@@ -22,7 +22,7 @@ In this section you will do the following tasks:
 
     ![approval-rule](./images/remediate-pm-approval-rule.png)
 
-4.  Click the **Create patch baseline** button at the bottom of the screen.  You should now see the new patch baseline in the list of baselines.  You may need to refresh the browser window to see it.  This new patch baseline includes non-security patches.  Note at the end of the line representing the newly created patch baseine you will see *No* in the *Default Baseline* column as shown in the figure below.
+4.  Click the **Create patch baseline** button at the bottom of the screen.  You should now see the new patch baseline in the list of baselines.  You may need to refresh the browser window to see it.  This new patch baseline includes non-security patches.  Note at the end of the line representing the newly created patch baseline you will see *No* in the *Default Baseline* column as shown in the figure below.
 
     ![default-baseline](./images/remediate-pm-default-baseline-no.png)
 
@@ -36,7 +36,7 @@ In this section you will do the following tasks:
 
 7. In the *Patching schedule* section, click the *Skip scheduling and patch instances now* radio button.
 
-8. In the *Patching operation* section, click the *Scan and install* radio button if it is not alerady selected.  Your screen should look similar to the image below.
+8. In the *Patching operation* section, click the *Scan and install* radio button if it is not already selected.  Your screen should look similar to the image below.
 
     ![configure-patching](./images/remediate-pm-configure-patching.png)
 

@@ -49,7 +49,7 @@ Web ACLs are ordered lists of rules. They are evaluated in order for each HTTP r
 
 ####AWS WAF Concepts:
 
-The following illustration shows AWS WAF Conditions, Rules and Web ACL's.
+The following illustration shows AWS WAF Conditions, Rules and Web ACLs.
 
 ![AWS WAF Concepts](./images/waf-concepts.png)
 
@@ -208,7 +208,7 @@ You are now going to examine the status of the patching operation by using AWS S
 
 3.  Click **Run**.  This will launch another assessment run. 
 
-4.  Click **Assessmnet runs** and periodically refresh the screen.  Wait until the status for the run changes to *Analysis complete*.  The run will take approximately 15 minutes to complete. **_While you are waiting, continue with the steps below._**
+4.  Click **Assessment runs** and periodically refresh the screen.  Wait until the status for the run changes to *Analysis complete*.  The run will take approximately 15 minutes to complete. **_While you are waiting, continue with the steps below._**
 
 ## Additional WAF Rule Creation
 
@@ -224,7 +224,7 @@ Use Cross-site scripting, as well as string matching conditions to build rules t
         2. body, html decode
         3. body, url decode
         4. header, cookie, url decode
-    2.	create a **String and regex matching** _String match_ type condition named filterXSSPathException with 1 filter. _This demonstrates how to add an expception for the XSS rule._
+    2.	create a **String and regex matching** _String match_ type condition named filterXSSPathException with 1 filter. _This demonstrates how to add an exception for the XSS rule._
 	    1. uri, starts with, no transform, _/reportBuilder/Editor.aspx_
     3.	create a rule named matchXSS
         1. type regular

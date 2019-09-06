@@ -29,7 +29,7 @@ In this section you will do the following tasks:
 
 ### Setting up Amazon Inspector
 
-Now that you know the name of your AWS CloudFormation stack, you will configure Amazon Inspector to scan the instance for vilnerabilities.  You will first define the *target* for inspector, namely the instances that Inspector will scan.  You will then define the *template* which includes both the *target* you defined as well as the kinds of scans to run.  You will then run the scan against the template.
+Now that you know the name of your AWS CloudFormation stack, you will configure Amazon Inspector to scan the instance for vulnerabilities.  You will first define the *target* for inspector, namely the instances that Inspector will scan.  You will then define the *template* which includes both the *target* you defined as well as the kinds of scans to run.  You will then run the scan against the template.
 
 ### Configure the Amazon Inspector target
 
@@ -67,7 +67,7 @@ Now that you have created an Amazon Inspector target, you will now create an Ama
 
 7.  Scroll to the bottom and click the **Create and run** button to save the template and run the assessment.  Depending on the size of your screen, you may have to scroll down multiple windows.  If you cannot click **Create and run**, make sure you unchecked the box in the previous step and try again.  The assessment will start and will take 15 minutes to compete.
 
-8.  On the Amazon Inspector menu, click **Assessment runs**.  You should see an entry for the assesment you just started.  While the assessment is running, the status will be *Collecting data*.  Periodically refresh the screen to see the current status.  When the assessment run ends, the status will change to *Analysis complete.*  The assessment will run for approximately 15 minutes. **_While you are waiting, continue with the steps below._**
+8.  On the Amazon Inspector menu, click **Assessment runs**.  You should see an entry for the assessment you just started.  While the assessment is running, the status will be *Collecting data*.  Periodically refresh the screen to see the current status.  When the assessment run ends, the status will change to *Analysis complete.*  The assessment will run for approximately 15 minutes. **_While you are waiting, continue with the steps below._**
 
 ## Assess the Network Layer
 
@@ -78,13 +78,13 @@ Now that you have created an Amazon Inspector target, you will now create an Ama
 2. While still in stack outputs, right click the link in **RedTeamHostSession** and open in new tab. This will launch an AWS Systems Manager Session Manager to the host you will use to perform ad hoc scans against your site URL.
 
 !!! info "AWS Systems Manager Session Manager"
-    Session Manager is a fully managed AWS Systems Manager capability that lets you manage your Amazon EC2 instances through an interactive one-click browser-based shell or through the AWS CLI. Session Manager provides secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. 
+    Session Manager is a fully managed AWS Systems Manager capability that lets you manage your Amazon EC2 instances through an interactive one-click browser-based shell or through the AWS CLI. Session Manager provides secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys.
 
 ### Using the Scanner
 
-In order to test your AWS WAF ruleset, this lab has been configured with two scanning capabilities; a Red Team Host where you can invoke manual scanning and an automated scanner which runs from outside your lab environment. 
+In order to test your AWS WAF ruleset, this lab has been configured with two scanning capabilities; a Red Team Host where you can invoke manual scanning and an automated scanner which runs from outside your lab environment.
 
-The scanner performs 10 basic tests designed to help simulate and mitigate common web attack vectors. 
+The scanner performs 10 basic tests designed to help simulate and mitigate common web attack vectors.
 
 1. Canary GET - This should succeed and shows that the scanner is not being blocked.
 2. Canary POST - This should succeed and shows that the scanner is not being blocked.

@@ -21,7 +21,7 @@ To setup the workshop environment, launch the CloudFormation stack below in the 
 
 !!! info "Note About Workshop and AWS Account"
     <p style="font-size:16px;">
-    _If you are not using an AWS account provided by the Workshop Team, we **stronly recommend that you use a non-production AWS account for this workshop** such as a training, sandbox or personal account. If multiple participants are sharing a single account you should use unique names for the stack set and resources created in the console._
+    _If you are not using an AWS account provided by the Workshop Team, we **strongly recommend that you use a non-production AWS account for this workshop** such as a training, sandbox or personal account. If multiple participants are sharing a single account you should use unique names for the stack set and resources created in the console._
     </p>
 
 If you are using your own account or an account provided by the Workshop Team, proceed with CloudFormation deployment in the preferred AWS region below:
@@ -56,7 +56,7 @@ If you are using your own account or an account provided by the Workshop Team, p
 2. On the Specify stack details step, update the following parameters depending on how you are doing this workshop:
 
 - If you are sharing an AWS account with someone else in the same region, change the name of the stack to __pww-yourinitials__
-- Trusted Network CIDR: Enter a trusted IP or CIDR range you will access the site from using a web browser. You can optain your current IP at <a href="https://ifconfig.co/" target="_blank">Ifconfig.co</a> The entry should follow CIDR notation. i.e. 10.10.10.10/32 for a single host.
+- Trusted Network CIDR: Enter a trusted IP or CIDR range you will access the site from using a web browser. You can obtain your current IP at <a href="https://ifconfig.co/" target="_blank">Ifconfig.co</a> The entry should follow CIDR notation. i.e. 10.10.10.10/32 for a single host.
 - Keep the defaults for the rest of the parameters.
 
 3. Click ***Next***

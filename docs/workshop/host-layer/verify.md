@@ -6,9 +6,9 @@ Now that you have remediate the environment, you will again use Amazon Inspector
 
 2.  Locate the template that you created during the Assess Phase and check the box at the left end of that row.
 
-3.  Click **Run**.  This will launch another assessment run. 
+3.  Click **Run**.  This will launch another assessment run.
 
-4.  Click **Assessmnet runs** and periodically refresh the screen.  Wait until the status for the run changes to *Analysis complete*.  The run will take approximately 15 minutes to complete.
+4.  Click **Assessment runs** and periodically refresh the screen.  Wait until the status for the run changes to *Analysis complete*.  The run will take approximately 15 minutes to complete.
 
 5.  Compare the number of findings between the two runs.   In most cases, there will be fewer findings in the newer run since patches have been applied.   The change in the number findings may vary based on the age of the AMI used to launch the instances.
 

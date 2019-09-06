@@ -91,7 +91,7 @@ As an example, lets say we want to build a rule to detect and block SQL Injectio
 
 ####Relevant transformations:
 
-- **SQL Injection Match Condition** query strinb is URL encoded, so we will apply the **URL_DECODE** transformation.
+- **SQL Injection Match Condition** query string is URL encoded, so we will apply the **URL_DECODE** transformation.
 
 ####Rules to implement:
 
@@ -165,7 +165,7 @@ How do the requirements derived from the above questions affect your solution?
         2. body, html decode
         3. body, url decode
         4. header, cookie, url decode
-    4.	create a **String and regex matching** _String match_ condition named filterXSSPathException with 1 filter. _This demonstrates how to add an expception for the XSS rule_ 
+    4.	create a **String and regex matching** _String match_ condition named filterXSSPathException with 1 filter. _This demonstrates how to add an exception for the XSS rule_ 
 	    1. uri, starts with, no transform, _/reportBuilder/Editor.aspx_
     5.	create a rule named matchXSS
         1. type regular
@@ -240,7 +240,7 @@ Consider the following:
 You should consider blocking access to such elements, or limiting access to known sources, either whitelisted IP addresses or geographic locations.
 
 ??? info "Solution"
-    1.	create **Geo match** conditon named filterAffiliates with 1 filter
+    1.	create **Geo match** condition named filterAffiliates with 1 filter
         1.	add country US, and RO
     2.	create **String and regex matching** _String match_ type condition named filterAdminUI with 1 filter
         1.	uri, starts with, no transform, _/admin_
@@ -286,7 +286,7 @@ Reputation lists can also be maintained by third parties. The AWS WAF Security A
 
 ??? info "Solution"
     1.	edit the IP addresses condition named WafIpBlackList
-        1. add a test IP address _You can optain your current IP at <a href="https://ifconfig.co/" target="_blank">Ifconfig.co</a> The entry should follow CIDR notation. i.e. 10.10.10.10/32 for a single host._
+        1. add a test IP address _You can obtain your current IP at <a href="https://ifconfig.co/" target="_blank">Ifconfig.co</a> The entry should follow CIDR notation. i.e. 10.10.10.10/32 for a single host._
     2.	create a **String and regex matching** _String match_ condition named filterNoPath with 1 filter
         1.	uri, starts with, no transform, _/phpmyadmin_
     3.	Use the concepts you learned in the previous exercises to add the _filterNoPath_ condition to your Web ACL.
