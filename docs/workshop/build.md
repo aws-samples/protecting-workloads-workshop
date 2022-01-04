@@ -24,27 +24,27 @@
     ---
 
     **US West 2 (Oregon)** &nbsp; &nbsp; &nbsp; &nbsp; 
-    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=pww&templateURL=https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/pww-workshop-env-build.yml" target="_blank">![Deploy in us-west-2](/images/deploy-to-aws.png)</a>
+    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=pww&templateURL=https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/pww-workshop-env-build.yml" target="_blank">![Deploy in us-west-2](/images/deploy-to-aws.png)</a>
 
     ---
 
     **US East 2 (Ohio)** &nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=pww&templateURL=https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/pww-workshop-env-build.yml" target="_blank">![Deploy in us-east-2](/images/deploy-to-aws.png)</a>
+    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=pww&templateURL=https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/pww-workshop-env-build.yml" target="_blank">![Deploy in us-east-2](/images/deploy-to-aws.png)</a>
 
     ---
 
     **US East 1 (N. Virginia)** &nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=pww&templateURL=https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/pww-workshop-env-build.yml" target="_blank">![Deploy in us-east-1](/images/deploy-to-aws.png)</a>
+    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=pww&templateURL=https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/pww-workshop-env-build.yml" target="_blank">![Deploy in us-east-1](/images/deploy-to-aws.png)</a>
 
     ---
 
     **EU West 1 (Ireland)** &nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=pww&templateURL=https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/pww-workshop-env-build.yml" target="_blank">![Deploy in us-east-1](/images/deploy-to-aws.png)</a>
+    <a href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=pww&templateURL=https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/pww-workshop-env-build.yml" target="_blank">![Deploy in us-east-1](/images/deploy-to-aws.png)</a>
 
     ---
 
     **AP Southeast 2 (Sydney)** &nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=pww&templateURL=https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/pww-workshop-env-build.yml" target="_blank">![Deploy in ap-southeast-2](/images/deploy-to-aws.png)</a>
+    <a href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=pww&templateURL=https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/pww-workshop-env-build.yml" target="_blank">![Deploy in ap-southeast-2](/images/deploy-to-aws.png)</a>
 
     ---
 

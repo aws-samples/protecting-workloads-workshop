@@ -29,14 +29,14 @@ Parameters:
   ArtifactsBucket:
     Description: S3 bucket with artifact files (Lambda functions, templates, html files, etc.). Leave default.
     Type: String
-    Default: protecting-workloads-workshop
+    Default: ee-assets-prod-us-east-1
     AllowedPattern: ^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$
     ConstraintDescription: ArtifactsBucket S3 bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-).
       It cannot start or end with a hyphen (-).
   ArtifactsPrefix:
     Description: Path in the S3 bucket containing artifact files. Leave default.
     Type: String
-    Default: public
+    Default: modules/5af8175826af40428bb6062dff449ce1/v5
     AllowedPattern: ^[0-9a-zA-Z-/]*$
     ConstraintDescription: ArtifactsPrefix key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-),
       and forward slash (/). Leave default.
@@ -76,18 +76,6 @@ Metadata:
         default: EC2 Instance Size
       MyTrustedNetwork:
         default: Trusted Network CIDR
-      AutomatedScanner:
-        default: Automated Scanner
-      EndPoint:
-        default: Automated Scanner Endpoint
-      UserName:
-        default: Automated Scanner Username
-      PassWord:
-        default: Automated Scanner Password
-      ScannerIP01:
-        default: Scanner IP01
-      ScannerIP02:
-        default: Scanner IP02
       ArtifactsBucket:
         default: S3 artifact bucket
       ArtifactsPrefix:
@@ -436,7 +424,7 @@ Resources:
             commands:
               01getsite_content:
                 cwd: /tmp
-                command: "cd /tmp; curl -O https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/pww_site.zip"
+                command: "cd /tmp; curl -O https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/pww_site.zip"
               02get_composer:
                 cwd: /tmp
                 env:
@@ -701,7 +689,7 @@ Resources:
             commands:
               download:
                 cwd: /usr/bin
-                command: "cd /usr/bin; curl -O https://s3.amazonaws.com/protecting-workloads-workshop/public/artifacts/scanner.py"
+                command: "cd /usr/bin; curl -O https://s3.us-east-1.amazonaws.com/ee-assets-prod-us-east-1/modules/5af8175826af40428bb6062dff449ce1/v5/scanner.py"
               addtargetcmd:
                 env:
                   SCANTARG: !Join ['', ['http://', !GetAtt Alb.DNSName]]
