@@ -492,7 +492,6 @@ Reputation lists can also be maintained by third parties. The AWS WAF Security A
         1. add a test IP address _You can obtain your current IP at <a href="https://ifconfig.co/" target="_blank">Ifconfig.co</a> The entry should follow CIDR notation. i.e. 10.10.10.10/32 for a single host._
     2.	Create a new rule named **matchRepNuisance**
         1.	uri_path, starts with, no transform, _/phpmyadmin_
-    3.	Use the concepts you learned in the previous exercises to add the _filterNoPath_ statement to your Web ACL.
 
 ### 7. Deploy Managed Rules for AWS WAF (Optional)
 
